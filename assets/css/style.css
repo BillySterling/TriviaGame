@@ -1,0 +1,63 @@
+body {
+    background-image: url("../images/galaxy.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #000000;   
+    font-family: 'Impact', Helvetica, sans-serif;
+    color: #dbb717;
+    ;
+}
+
+p {
+    font-size: 20pt;
+}
+
+h1 {
+	font-weight: bold;
+    text-align: center;
+    font-size: 30pt;
+}
+
+.header {
+    margin-top: 60px;
+}
+
+.button-position {
+    margin-top: 160px;
+    max-width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*.gamePhoto {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}*/
+
+.reset-button ,.start-button {
+    color: #dbb717;
+    background-color: #000000;  
+}
+
+.timer-disp {
+    margin-top: 30px;
+}
+
+.answer {
+    padding-top: 5px;
+    height: 50px;
+    color: black;
+    padding-left: 20px;
+    background-color: #dbb717;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.answer:hover {
+    background: #dfcb76;
+}
+
