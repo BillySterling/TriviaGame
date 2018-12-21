@@ -31,7 +31,10 @@ h1 {
 }
 
  .gamePhoto {
-    border: 5px solid #dbb717
+    border: 5px solid #dbb717;
+    display: block;
+    max-width: 100%;
+    height: auto;
 } 
 
 .reset-button ,.start-button {
@@ -75,5 +78,8 @@ h1 {
   @media screen and (max-width: 640px) {
 	.container {
 		max-width: 600px;
-	}
+    }
+    .gamePhoto {
+        border: 5px solid #dbb717;
+    } 
   }
