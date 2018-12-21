@@ -158,8 +158,6 @@ function generateHTML() {
 
   $(".gameScreen").html(gameHTML);
 
-  gameHTML = "";
-  $(".gamePhoto").html(gameHTML);
 }
 
 function resetGame() {
