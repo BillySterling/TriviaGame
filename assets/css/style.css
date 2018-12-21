@@ -39,7 +39,8 @@ h1 {
 
 .reset-button ,.start-button {
     color: #dbb717;
-    background-color: #000000;  
+    background-color: #000000;
+    text-align: center;
 }
 
 .timer-disp {

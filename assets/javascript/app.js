@@ -68,7 +68,7 @@ var correctAnswer = [
   "A. Montgomery"
 ];
 
-var kudoArray = ["Good job!","Awesome!","You rock!","A true Trekkie!","Perfect!"];
+var kudoArray = ["Good job!","Awesome!","You rock!","A true Trekkie!","Perfect!","Great!","Sweet!"];
 
 var startScreen;
 var gameHTML;
@@ -145,7 +145,7 @@ function pauseGame() {
       "<p class='text-center'>Correct Answers:  " + correctCount + "</p>" + 
       "<p class='text-center'>Incorrect Answers:  " + incorrectCount + "</p>" + 
       "<p class='text-center'>Unanswered:  " + unansweredCount + "</p>" + 
-      "<p class='text-center button-position'><a class='btn btn-warning btn-lg btn-block reset-button' href='#' role='button'>Try Again</a></p>";
+      "<p class='text-center button-position'><a class='btn btn-warning btn-lg btn-block reset-button' href='#' role='button'>AGAIN?</a></p>";
       $(".gameScreen").html(gameHTML);
   }
 }
