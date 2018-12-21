@@ -16,7 +16,7 @@ p {
 h1 {
 	font-weight: bold;
     text-align: center;
-    font-size: 30pt;
+    font-size: 40pt;
 }
 
 .header {
@@ -72,13 +72,32 @@ h1 {
   @media screen and (max-width: 768px) {
 	.container {
 	  	max-width: 750px;
-	}
+    }
+    
+    h1 {
+        font-size: 30pt;
+    }
+
   }
 
   @media screen and (max-width: 640px) {
 	.container {
 		max-width: 600px;
     }
+
+    p {
+        font-size: 14pt;
+    }
+    
+    h1 {
+        font-size: 30pt;
+    }
+
+    .answer {
+        padding-top: 6px;
+        height: 40px;
+    }
+
     .gamePhoto {
         border: 5px solid #dbb717;
     } 
