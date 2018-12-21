@@ -68,6 +68,8 @@ var correctAnswer = [
   "A. Montgomery"
 ];
 
+var kudoArray = ["Good job!","Awesome!","You rock!","A true Trekkie!","Perfect!"];
+
 var startScreen;
 var gameHTML;
 var seconds = 15;
@@ -108,9 +110,10 @@ function outtaTime() {
 function gameWin() {
   correctCount++;
   var dispImg = "<img src='assets/images/ST" + questionNum + ".jpg' class='rounded mx-auto d-block gamePhoto'>";
+  kudoRsp = kudoArray[Math.floor(Math.random() * kudoArray.length)];
 
   gameHTML = 
-      "<p class='text-center'>" + correctAnswer[questionNum] + " is correct!  Good job!</p>" + 
+      "<p class='text-center'>" + correctAnswer[questionNum] + " is correct! " + kudoRsp + "</p>" + 
       dispImg; 
 
     $(".gameScreen").html(gameHTML);
