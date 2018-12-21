@@ -96,7 +96,7 @@ function timeKeeper() {
 
 function outtaTime() {
   unansweredCount++;
-  var dispImg = "<img src='assets/images/ST" + questionNum + ".jpg'>";
+  var dispImg = "<img src='assets/images/ST" + questionNum + ".jpg' class='rounded mx-auto d-block gamePhoto'>";
 
   gameHTML = 
       "<p class='text-center'>Time's up! The correct answer is:  " + correctAnswer[questionNum] + "</p>" + dispImg;
@@ -107,25 +107,20 @@ function outtaTime() {
 
 function gameWin() {
   correctCount++;
-  var dispImg = "<img src='assets/images/ST" + questionNum + ".jpg'>";
+  var dispImg = "<img src='assets/images/ST" + questionNum + ".jpg' class='rounded mx-auto d-block gamePhoto'>";
 
   gameHTML = 
-/*      "<p class='text-center'>" + correctAnswer[questionNum] + " is correct!  Good job!</p>" + 
-      dispImg; */
-
-      "<p class='text-center'>" + correctAnswer[questionNum] + " is correct!  Good job!</p>";
+      "<p class='text-center'>" + correctAnswer[questionNum] + " is correct!  Good job!</p>" + 
+      dispImg; 
 
   $(".gameScreen").html(gameHTML);
-
-  gameHTML = dispImg;
-  $(".gamePhoto").html(gameHTML);
 
   setTimeout(pauseGame, 4000);
 }
 
 function gameLose() {
   incorrectCount++;
-  var dispImg = "<img src='assets/images/ST" + questionNum + ".jpg'>";
+  var dispImg = "<img src='assets/images/ST" + questionNum + ".jpg' class='rounded mx-auto d-block gamePhoto'>";
 
   gameHTML = 
       "<p class='text-center'>Sorry, the correct answer is: " + correctAnswer[questionNum] + "</p>" + 

@@ -30,12 +30,9 @@ h1 {
     margin-right: auto;
 }
 
-/*.gamePhoto {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-}*/
+ .gamePhoto {
+    border: 5px solid #dbb717
+} 
 
 .reset-button ,.start-button {
     color: #dbb717;
