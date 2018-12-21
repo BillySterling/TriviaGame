@@ -83,7 +83,7 @@ function timeKeeper() {
   timeClock = setInterval(gameTimer, 1000);
 
   function gameTimer() {
-    debugger;
+
       if (seconds === 0) {
           clearInterval(timeClock);
           outtaTime();
@@ -113,9 +113,8 @@ function gameWin() {
       "<p class='text-center'>" + correctAnswer[questionNum] + " is correct!  Good job!</p>" + 
       dispImg; 
 
-  $(".gameScreen").html(gameHTML);
-
-  setTimeout(pauseGame, 4000);
+    $(".gameScreen").html(gameHTML);
+    setTimeout(pauseGame, 4000);
 }
 
 function gameLose() {
@@ -172,5 +171,3 @@ unansweredCount = 0;
 generateHTML();
 timeKeeper();
 }
-
-
