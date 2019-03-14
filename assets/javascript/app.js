@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+/*eslint-env jquery*/
 $(document).ready(function () {
 
   function initializeGame() {
@@ -15,7 +17,7 @@ $(document).ready(function () {
   });
   
   $("body").on("click", ".answer", function(event){
-      gameAnswer = $(this).text();
+      var gameAnswer = $(this).text();
       if (gameAnswer === gameArray.correctAnswer[questionNum]) {
           clearInterval(timeClock);
           gameWin();
@@ -48,7 +50,6 @@ var startScreen;
 var gameHTML;
 var seconds = 15;
 var questionNum = 0;
-var selecterAnswer;
 var timeClock;
 var correctCount = 0;
 var incorrectCount = 0;
@@ -84,7 +85,7 @@ function outtaTime() {
 function gameWin() {
   correctCount++;
   var dispImg = "<img src='assets/images/ST" + questionNum + ".jpg' class='rounded mx-auto d-block gamePhoto'>";
-  kudoRsp = kudoArray[Math.floor(Math.random() * kudoArray.length)];
+  var kudoRsp = kudoArray[Math.floor(Math.random() * kudoArray.length)];
 
   gameHTML = 
       "<p class='text-center'>" + gameArray.correctAnswer[questionNum] + " is correct! " + kudoRsp + "</p>" + 
